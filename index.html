@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LuxGym</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <img id="logo" src="lux.png" alt="Logo">
+  <div class="botones">
+    <button id="rutinaAdaptacion" onclick="mostrarRutinaAdaptacion()">Rutina de Adaptación</button>
+    <button id="rutinaFullBody" onclick="mostrarRutinaFB()">Rutina Full Body</button>
+    <button id="rutinaWeider" onclick=" mostrarRutinaWeider()">Rutina Weider</button>
+    <button id="rutinaEmpujes" onclick="mostrarRutinaEM()">Rutina de Empujes-Tirones-Piernas</button>
+    <button id="rutinaMujeres" onclick="mostrarRutinaM()">Rutina de Mujeres 5 dias</button>
+  </div>
+  <div class="tabla-rutina" id="rutinaMTabla" style="display: none;">
+    <h2>Rutina de Mujeres 5 días a la semana</h2>
+     <table>
+       <tr>
+         <th>Día</th>
+         <th>Parte del Cuerpo</th>
+         <th>Ejercicio</th>
+         <th>Series</th>
+         <th>Repeticiones</th>
+       </tr>
+       <!-- Lunes -->
+       <tr>
+         <td rowspan="11">Lunes</td>
+         <td rowspan="11">Entrenamiento General</td>
+         <td>Abdominales media bisagra</td>
+         <td>4</td>
+         <td>30</td>
+       </tr>
+       <tr>
+         <td>Plancha frontal</td>
+         <td>4</td>
+         <td>1 minuto</td>
+       </tr>
+       <tr>
+         <td>Espinales</td>
+         <td>4</td>
+         <td>30</td>
+       </tr>
+       <tr>
+         <td>Sentadilla</td>
+         <td>4</td>
+         <td>15</td>
+       </tr>
+       <tr>
+         <td>Prensa</td>
+         <td>4</td>
+         <td>15</td>
+       </tr>
+       <tr>
+         <td>Sillón de cuádriceps</td>
+         <td>4 superseries</td>
+         <td></td>
+       </tr>
+       <tr>
+         <td>Caminata de estocadas</td>
+         <td>4</td>
+         <td>15</td>
+       </tr>
+       <tr>
+         <td>Zumo</td>
+         <td>4</td>
+         <td>15</td>
+       </tr>
+       <tr>
+         <td>Estocadas en multifuerza</td>
+         <td>4</td>
+         <td>15</td>
+       </tr>
+       <tr>
+         <td>Sentadilla cerrada (con elevación de talón usando disco)</td>
+         <td>4</td>
+         <td>15</td>
+       </tr>
+       <tr>
+         <td>Gemelos en multifuerza (3 ángulos de trabajo)</td>
+         <td>4 series de 8 repeticiones en cada ángulo</td>
+         <td></td>
+       </tr>
+       <!-- Martes -->
+       <tr>
+         <td rowspan="13">Martes</td>
+         <td rowspan="13">Entrenamiento General</td>
+         <td>Abdominales cruzados</td>
+         <td>4</td>
+         <td>30</td>
+       </tr>
+       <!-- Continúa con los ejercicios para el martes -->
+       <tr>
+         <td>Escaladores</td>
+         <td>4</td>
+         <td>30</td>
+       </tr>
+       <tr>
+         <td>Plancha lateral</td>
+         <td>4</td>
+         <td>40 segundos</td>
+       </tr>
+       <tr>
+         <td>Flexiones de brazos</td>
+         <td>4</td>
+         <td>10</td>
+       </tr>
+       <tr>
+         <td>Press en banco plano</td>
+         <td>4</td>
+         <td>10</td>
+       </tr>
+       <tr>
+         <td>Apertura en banco inclinado</td>
+         <td>4</td>
+         <td>10</td>
+       </tr>
+       <tr>
+         <td>Empuje en banco plano</td>
+         <td>4</td>
+         <td>10</td>
+       </tr>
+       <tr>
+         <td>Pull Over</td>
+         <td>4</td>
+         <td>10</td>
+       </tr>
+       <tr>
+         <td>Curl de bíceps en polea con barra</td>
+         <td>4</td>
+         <td>10</td>
+       </tr>
+       <tr>
+         <td>Martillo con mancuerna</td>
+         <td>4</td>
+         <td>10</td>
+       </tr>
+       <tr>
+         <td>Remo alto</td>
+         <td>4</td>
+         <td>10</td>
+       </tr>
+       <tr>
+         <td>Vuelos combinados</td>
+         <td>4</td>
+         <td>10</td>
+       </tr>
+       <tr>
+         <td>Posteriores con soga</td>
+         <td>4</td>
+         <td>10</td>
+       </tr>
+       <!-- Miércoles -->
+       <tr>
+         <td rowspan="12">Miércoles</td>
+         <td rowspan="12">Entrenamiento General</td>
+         <td>Abdominales en banco declinado</td>
+         <td>4</td>
+         <td>20</td>
+       </tr>
+       <!-- Continúa con los ejercicios para el miércoles -->
+       <tr>
+         <td>Abdominales en banco romano</td>
+         <td>4</td>
+         <td>15</td>
+       </tr>
+       <tr>
+         <td>Tijeras (verticales)</td>
+         <td>4</td>
+         <td>30</td>
+       </tr>
+       <tr>
+         <td>Planchas frontales</td>
+         <td>4</td>
+         <td>1 minuto</td>
+       </tr>
+       <tr>
+         <td>Peso muerto a una pierna</td>
+         <td>4</td>
+         <td>15</td>
+       </tr>
+       <tr>
+         <td>Prensa (pies separados)</td>
+         <td>4</td>
+         <td>15</td>
+       </tr>
+       <tr>
+         <td>Camilla de femorales superserie</td>
+         <td>4</td>
+         <td></td>
+       </tr>
+       <tr>
+         <td>Buen día</td>
+         <td>4</td>
+         <td>15</td>
+       </tr>
+       <tr>
+         <td>Femorales en polea</td>
+         <td>4</td>
+         <td>15</td>
+       </tr>
+       <tr>
+         <td>Puente de glúteos</td>
+         <td>4</td>
+         <td>15</td>
+       </tr>
+       <tr>
+         <td>Estocada con step</td>
+         <td>4</td>
+         <td>15</td>
+       </tr>
+       <tr>
+         <td>Zumo (pulsos)</td>
+         <td>4</td>
+         <td>18 repeticiones</td>
+       </tr>
+       <!-- Jueves -->
+       <tr>
+         <td rowspan="13">Jueves</td>
+         <td rowspan="13">Entrenamiento General</td>
+         <td>Abdominales media bisagra</td>
+         <td>4</td>
+         <td>30</td>
+       </tr>
+       <!-- Continúa con los ejercicios para el jueves -->
+       <tr>
+         <td>Plancha frontal</td>
+         <td>4</td>
+         <td>1 minuto</td>
+       </tr>
+       <tr>
+         <td>Espinales</td>
+         <td>4</td>
+         <td>30</td>
+       </tr>
+       <tr>
+         <td>Dorsalera frontal amplia</td>
+         <td>4</td>
+         <td>10-12</td>
+       </tr>
+       <tr>
+         <td>Dorsalera frontal cerrada</td>
+         <td>4</td>
+         <td>10-12</td>
+       </tr>
+       <tr>
+         <td>Remo bajo</td>
+         <td>4</td>
+         <td>10-12</td>
+       </tr>
+       <tr>
+         <td>Serrucho en polea</td>
+         <td>4</td>
+         <td>10-12</td>
+       </tr>
+       <tr>
+         <td>Press de hombros</td>
+         <td>4</td>
+         <td>10-12</td>
+       </tr>
+       <tr>
+         <td>Qué me importa</td>
+         <td>4</td>
+         <td>15</td>
+       </tr>
+       <tr>
+         <td>Tríceps con soga</td>
+         <td>4</td>
+         <td>10-12</td>
+       </tr>
+       <tr>
+         <td>Rompecoco</td>
+         <td>4</td>
+         <td>10-12</td>
+       </tr>
+       <tr>
+         <td>Frances (tríceps) con disco</td>
+         <td>4</td>
+         <td>10-12</td>
+       </tr>
+       <tr>
+         <td>Posteriores en banco inclinado</td>
+         <td>4</td>
+         <td>10</td>
+       </tr>
+       <!-- Viernes -->
+       <tr>
+         <td rowspan="16">Viernes</td>
+         <td rowspan="16">Entrenamiento General</td>
+         <td>Abdominales cruzados</td>
+         <td>4</td>
+         <td>30</td>
+       </tr>
+       <!-- Continúa con los ejercicios para el viernes -->
+       <tr>
+         <td>Escaladores</td>
+         <td>4</td>
+         <td>30</td>
+       </tr>
+       <tr>
+         <td>Plancha lateral</td>
+         <td>4</td>
+         <td></td>
+       </tr>
+       <tr>
+         <td>Peso muerto a una pierna</td>
+         <td>4</td>
+         <td>15</td>
+       </tr>
+       <tr>
+         <td>Camilla de femorales</td>
+         <td>4</td>
+         <td>15</td>
+       </tr>
+       <tr>
+         <td>Puente de glúteos</td>
+         <td>4</td>
+         <td>15</td>
+       </tr>
+       <tr>
+         <td>Sentadillas</td>
+         <td>4</td>
+         <td>15</td>
+       </tr>
+       <tr>
+         <td>Zumo</td>
+         <td>4</td>
+         <td>15</td>
+       </tr>
+       <tr>
+         <td>Patada de glúteos</td>
+         <td>4</td>
+         <td>15</td>
+       </tr>
+       <tr>
+         <td>L con banda</td>
+         <td>4</td>
+         <td>15</td>
+       </tr>
+       <tr>
+         <td>Desplazamiento lateral con banda</td>
+         <td>6 idas y vueltas</td>
+         <td></td>
+       </tr>
+       <tr>
+         <td>Abductores en polea</td>
+         <td>4</td>
+         <td>15</td>
+       </tr>
+       <tr>
+         <td>Estocada búlgara</td>
+         <td>4</td>
+         <td>15</td>
+       </tr>
+       <tr>
+         <td>Puente (alejando el apoyo del pie)</td>
+         <td>4</td>
+         <td>10</td>
+       </tr>
+       <tr>
+         <td>Buen día</td>
+         <td>4</td>
+         <td>15</td>
+       </tr>
+     </table>
+ </div>
+ 
+
+
+  
+  <div class="tabla-rutina" id="rutinaWTabla" style="display: none;"> 
+   <h2>Rutina Weider de 4 días a la semana</h2>
+        <table>
+          <tr>
+            <th>Día</th>
+            <th>Parte del Cuerpo</th>
+            <th>Ejercicio</th>
+            <th>Series</th>
+            <th>Repeticiones</th>
+          </tr>
+          <!-- Día 1: Pecho y Tríceps -->
+          <tr>
+            <td rowspan="8">Día 1</td>
+            <td rowspan="8">Pecho y Tríceps</td>
+            <td>Press de banca</td>
+            <td>4</td>
+            <td>8-10</td>
+          </tr>
+          <tr>
+            <td>Fondos en paralelas o dips</td>
+            <td>4</td>
+            <td>8-10</td>
+          </tr>
+          <tr>
+            <td>Aperturas con mancuernas</td>
+            <td>4</td>
+            <td>10-12</td>
+          </tr>
+          <tr>
+            <td>Rompe coco con barra W</td>
+            <td>4</td>
+            <td>10-12</td>
+          </tr>
+          <tr>
+            <td> Aperturas en banco inclinado con mancuernas</td>
+            <td>4</td>
+            <td>10-12</td>
+          </tr>
+          <tr>
+            <td>Pull Over con mancuerna</td>
+            <td>4</td>
+            <td>10-12</td>
+          </tr>
+          <tr>
+            <td>Extensiones de tríceps en polea alta</td>
+            <td>4</td>
+            <td>10-12</td>
+          </tr>
+          <tr>
+            <td>Flexiones de brazos en suelo</td>
+            <td>4</td>
+            <td>al fallo</td>
+          </tr>
+          <!-- Día 2: Espalda y Bíceps -->
+          <tr>
+            <td rowspan="8">Día 2</td>
+            <td rowspan="8">Espalda y Bíceps</td>
+            <td>Dominadas o dominadas asistidas</td>
+            <td>4</td>
+            <td>8-10</td>
+          </tr>
+          <!-- Continúa con los ejercicios para el día 2 -->
+          <tr>
+            <td>Remo con barra</td>
+            <td>4</td>
+            <td>8-10</td>
+          </tr>
+          <tr>
+            <td>Pulldown en polea alta (dorsalera)</td>
+            <td>4</td>
+            <td>10-12</td>
+          </tr>
+          <tr>
+            <td>Curl de bíceps con barra recta</td>
+            <td>4</td>
+            <td>10-12</td>
+          </tr>
+          <tr>
+            <td>Curl de bíceps martillo con mancuernas</td>
+            <td>4</td>
+            <td>10-12</td>
+          </tr>
+          <tr>
+            <td>Peso muerto rumano con barra</td>
+            <td>4</td>
+            <td>10-12</td>
+          </tr>
+          <tr>
+            <td>Remo con mancuerna a un brazo</td>
+            <td>4</td>
+            <td>10-12</td>
+          </tr>
+          <tr>
+            <td>Curl de bíceps concentrado</td>
+            <td>4</td>
+            <td>10-12</td>
+          </tr>
+          <!-- Día 3: Piernas -->
+          <tr>
+            <td rowspan="8">Día 3</td>
+            <td rowspan="8">Piernas</td>
+            <td>Sentadillas</td>
+            <td>4</td>
+            <td>8-10</td>
+          </tr>
+          <!-- Continúa con los ejercicios para el día 3 -->
+          <tr>
+            <td>Prensa de piernas</td>
+            <td>4</td>
+            <td>8-10</td>
+          </tr>
+          <tr>
+            <td>Extensiones de piernas (Cuadriceps en Sillon)</td>
+            <td>4</td>
+            <td>10-12</td>
+          </tr>
+          <tr>
+            <td>Camilla de Femorales</td>
+            <td>4</td>
+            <td>10-12</td>
+          </tr>
+          <tr>
+            <td>Elevación de talones de pie (Gemelos)</td>
+            <td>4</td>
+            <td>12-15</td>
+          </tr>
+          <tr>
+            <td>Zancadas con mancuernas (caminata de estocadas)</td>
+            <td>4</td>
+            <td>10-12</td>
+          </tr>
+          <tr>
+            <td>Peso muerto sumo</td>
+            <td>4</td>
+            <td>10-12</td>
+          </tr>
+          <tr>
+            <td>Extensiones de cadera con banda elástica</td>
+            <td>4</td>
+            <td>12-15</td>
+          </tr>
+          <!-- Día 4: Hombros y Abdominales -->
+          <tr>
+            <td rowspan="7">Día 4</td>
+            <td rowspan="7">Hombros y Abdominales</td>
+            <td>Press militar con barra</td>
+            <td>4</td>
+            <td>8-10</td>
+          </tr>
+          <!-- Continúa con los ejercicios para el día 4 -->
+          <tr>
+            <td>Elevaciones laterales con mancuernas</td>
+            <td>4</td>
+            <td>10-12</td>
+          </tr>
+          <tr>
+            <td>Elevaciones frontales con mancuernas</td>
+            <td>4</td>
+            <td>10-12</td>
+          </tr>
+          <tr>
+            <td>Encogimientos de hombros con mancuernas(Que me importa)</td>
+            <td>4</td>
+            <td>10-12</td>
+          </tr>
+          <tr>
+            <td>Abdominales</td>
+            <td>4</td>
+            <td>15-20</td>
+          </tr>
+          <tr>
+            <td>Plancha lateral</td>
+            <td>4</td>
+            <td>30-45 segundos</td>
+          </tr>
+          <tr>
+            <td>Elevaciones de piernas en Banpo romano</td>
+            <td>4</td>
+            <td>10-12</td>
+          </tr>
+        </table>
+
+      
+</div>
+<div class="tabla-rutina" id="rutinaEMTabla" style="display: none;">
+    <h2>Rutina de Empujes, Tirones, Piernas y Abdominales</h2>
+    <table>
+      <tr>
+        <th>Día</th>
+        <th>Parte del Cuerpo</th>
+        <th>Ejercicio</th>
+        <th>Series</th>
+        <th>Repeticiones</th>
+      </tr>
+      <!-- Día 1: Empujes -->
+      <tr>
+        <td rowspan="10">Día 1</td>
+        <td rowspan="10">Empujes</td>
+        <td>Press de banca con barra</td>
+        <td>4</td>
+        <td>8-10</td>
+      </tr>
+      <!-- Continúa con los ejercicios para el día 1 -->
+      <tr>
+        <td>Fondos en paralelas o dips</td>
+        <td>4</td>
+        <td>8-10</td>
+      </tr>
+      <tr>
+        <td>Press militar con barra</td>
+        <td>4</td>
+        <td>8-10</td>
+      </tr>
+      <tr>
+        <td>Elevaciones laterales con mancuernas</td>
+        <td>4</td>
+        <td>10-12</td>
+      </tr>
+      <tr>
+        <td>Elevaciones frontales con mancuernas</td>
+        <td>4</td>
+        <td>10-12</td>
+      </tr>
+      <tr>
+        <td>Press de tríceps con barra EZ</td>
+        <td>4</td>
+        <td>10-12</td>
+      </tr>
+      <tr>
+        <td>Extensiones de tríceps en polea alta</td>
+        <td>4</td>
+        <td>10-12</td>
+      </tr>
+      <tr>
+        <td>Flexiones de brazos en suelo</td>
+        <td>4</td>
+        <td>al fallo</td>
+      </tr>
+      <tr>
+        <td>Aberturas con mancuernas</td>
+        <td>4</td>
+        <td>10-12</td>
+      </tr>
+      <tr>
+        <td>Flexiones declinadas</td>
+        <td>4</td>
+        <td>al fallo</td>
+      </tr>
+      <!-- Día 2: Tirones -->
+      <tr>
+        <td rowspan="10">Día 2</td>
+        <td rowspan="10">Tirones</td>
+        <td>Dominadas</td>
+        <td>4</td>
+        <td>8-10</td>
+      </tr>
+      <!-- Continúa con los ejercicios para el día 2 -->
+      <tr>
+        <td>Remo con barra</td>
+        <td>4</td>
+        <td>8-10</td>
+      </tr>
+      <tr>
+        <td>Pulldown en polea alta</td>
+        <td>4</td>
+        <td>8-10</td>
+      </tr>
+      <tr>
+        <td>Remo con mancuerna a un brazo</td>
+        <td>4</td>
+        <td>8-10</td>
+      </tr>
+      <tr>
+        <td>Curl de bíceps con barra</td>
+        <td>4</td>
+        <td>10-12</td>
+      </tr>
+      <tr>
+        <td>Curl de bíceps martillo con mancuernas</td>
+        <td>4</td>
+        <td>10-12</td>
+      </tr>
+      <tr>
+        <td>Peso muerto rumano con barra</td>
+        <td>4</td>
+        <td>10-12</td>
+      </tr>
+      <tr>
+        <td>Hiperextensiones lumbares</td>
+        <td>4</td>
+        <td>10-12</td>
+      </tr>
+      <tr>
+        <td>Encogimientos de hombros con mancuernas</td>
+        <td>4</td>
+        <td>10-12</td>
+      </tr>
+      <tr>
+        <td>Facepulls con cuerda</td>
+        <td>4</td>
+        <td>10-12</td>
+      </tr>
+      <!-- Día 3: Piernas -->
+      <tr>
+        <td rowspan="11">Día 3</td>
+        <td rowspan="11">Piernas</td>
+        <td>Sentadillas</td>
+        <td>4</td>
+        <td>8-10</td>
+      </tr>
+      <!-- Continúa con los ejercicios para el día 3 -->
+      <tr>
+        <td>Prensa de piernas</td>
+        <td>4</td>
+        <td>8-10</td>
+      </tr>
+      <tr>
+        <td>Extensiones de piernas</td>
+        <td>4</td>
+        <td>8-10</td>
+      </tr>
+      <tr>
+        <td>Curl de piernas acostado</td>
+        <td>4</td>
+        <td>8-10</td>
+      </tr>
+      <tr>
+        <td>Elevación de talones</td>
+        <td>4</td>
+        <td>12-15</td>
+      </tr>
+      <tr>
+        <td>Zancadas con barra</td>
+        <td>4</td>
+        <td>10-12</td>
+      </tr>
+      <tr>
+        <td>Peso muerto rumano con barra</td>
+        <td>4</td>
+        <td>10-12</td>
+      </tr>
+      <tr>
+        <td>Prensa de pantorrillas</td>
+        <td>4</td>
+        <td>12-15</td>
+      </tr>
+      <tr>
+        <td>Extensiones de cadera con banda elástica</td>
+        <td>4</td>
+        <td>12-15</td>
+      </tr>
+      <tr>
+        <td>Elevaciones de pierna en máquina</td>
+        <td>4</td>
+        <td>12-15</td>
+      </tr>
+      <tr>
+        <td>Abducciones de cadera en máquina</td>
+        <td>4</td>
+        <td>12-15</td>
+      </tr>
+      <!-- Día 4: Abdominales -->
+      <tr>
+        <td rowspan="11">Día 4</td>
+        <td rowspan="11">Abdominales</td>
+        <td>Crunches</td>
+        <td>4</td>
+        <td>15-20</td>
+      </tr>
+      <!-- Continúa con los ejercicios para el día 4 -->
+      <tr>
+        <td>Plancha lateral</td>
+        <td>4</td>
+        <td>30-45 segundos</td>
+      </tr>
+      <tr>
+        <td>Elevaciones de piernas colgadas</td>
+        <td>4</td>
+        <td>10-12</td>
+      </tr>
+      <tr>
+        <td>Twist ruso con peso</td>
+        <td>4</td>
+        <td>15-20 por lado</td>
+      </tr>
+      <tr>
+        <td>Crunches en máquina</td>
+        <td>4</td>
+        <td>15-20</td>
+      </tr>
+      <tr>
+        <td>Flexiones de tronco en suelo</td>
+        <td>4</td>
+        <td>al fallo</td>
+      </tr>
+      <tr>
+        <td>Rotación de tronco con barra</td>
+        <td>4</td>
+        <td>15-20 por lado</td>
+      </tr>
+      <tr>
+        <td>Crunches en polea alta</td>
+        <td>4</td>
+        <td>15-20</td>
+      </tr>
+      <tr>
+        <td>Plancha con elevación de pierna</td>
+        <td>4</td>
+        <td>10-12 por lado</td>
+      </tr>
+      <tr>
+        <td>Crunches invertidos</td>
+        <td>4</td>
+        <td>15-20</td>
+      </tr>
+      <tr>
+        <td>Crunches con bola suiza</td>
+        <td>4</td>
+        <td>15-20</td>
+      </tr>
+    </table>
+  </div>
+  
+  <div class="tabla-rutina" id="rutinaAdaptacionTabla" style="display: none;">
+    <h2>Rutina de Adaptación de 3 días a la semana</h2>
+    <table>
+      <tr>
+          <th>Día</th>
+          <th>Parte del Cuerpo</th>
+          <th>Ejercicio</th>
+          <th>Series</th>
+          <th>Repeticiones</th>
+      </tr>
+      <tr>
+          <td rowspan="5">Día 1</td>
+          <td rowspan="5">Parte Superior</td>
+          <td>Press de banca con barra</td>
+          <td>3</td>
+          <td>8-10</td>
+      </tr>
+      <tr>
+          
+          <td>Dominadas asistidas o dominadas en máquina</td>
+          <td>3</td>
+          <td>8-10</td>
+      </tr>
+      <tr>
+          
+          <td>Press militar con mancuernas</td>
+          <td>3</td>
+          <td>8-10</td>
+      </tr>
+      <tr>
+          
+          <td>Remo con barra</td>
+          <td>3</td>
+          <td>10-12</td>
+      </tr>
+      <tr>
+          
+          <td>Fondos en paralelas o flexiones de pecho</td>
+          <td>3</td>
+          <td>10-12</td>
+      </tr>
+      <tr>
+          <td rowspan="5">Día 2</td>
+          <td rowspan="5">Parte Inferior</td>
+          <td>Sentadillas con barra</td>
+          <td>3</td>
+          <td>8-10</td>
+      </tr>
+      <tr>
+          
+          <td>Prensa de piernas en máquina</td>
+          <td>3</td>
+          <td>10-12</td>
+      </tr>
+      <tr>
+          
+          <td>Peso muerto con barra</td>
+          <td>3</td>
+          <td>8-10</td>
+      </tr>
+      <tr>
+          
+          <td>Zancadas con mancuernas</td>
+          <td>3</td>
+          <td>10</td>
+      </tr>
+      <tr>
+          
+          <td>Elevación de talones </td>
+          <td>3</td>
+          <td>12-15</td>
+      </tr>
+      <tr>
+        <td rowspan="5">Día 3</td>
+        <td rowspan="5">Todo el Cuerpo</td>
+        <td>Peso muerto rumano con barra</td>
+        <td>3</td>
+        <td>8-10</td>
+    </tr>
+    <tr>
+        <td>Press de hombros con mancuernas</td>
+        <td>3</td>
+        <td>10-12</td>
+    </tr>
+    <tr>
+        <td>Flexiones de tríceps en polea alta</td>
+        <td>3</td>
+        <td>10-12</td>
+    </tr>
+    <tr>
+        <td>Curl de bíceps con barra</td>
+        <td>3</td>
+        <td>10-12</td>
+    </tr>
+    <tr>
+        <td>Crunches o abdominales</td>
+        <td>3</td>
+        <td>12-15</td>
+    </tr>    
+  </table>
+</div>
+  <div class="tabla-rutina" id="rutinaFBTabla" style="display: none;">
+<h2>Rutina de Entrenamiento FULL BODY</h2>
+
+<table>
+  <tr>
+    <th>Día</th>
+    <th>Ejercicio</th>
+    <th>Series x Repeticiones</th>
+  </tr>
+  <!-- Día 1 -->
+  <tr>
+    <td rowspan="10">Día 1</td>
+    <td>Sentadillas</td>
+    <td>4 x 8-10</td>
+  </tr>
+  <tr>
+    <td>Press de pecho (con mancuernas o barra)</td>
+    <td>3 x 8-10</td>
+  </tr>
+  <tr>
+    <td>Peso muerto</td>
+    <td>3 x 8-10</td>
+  </tr>
+  <tr>
+    <td>Fondos en paralelas/ o en banco</td>
+    <td>3 x 10-12</td>
+  </tr>
+  <tr>
+    <td>Curl de bíceps (con mancuernas o barra)</td>
+    <td>3 x 10-12</td>
+  </tr>
+  <tr>
+    <td>Elevaciones laterales con mancuernas</td>
+    <td>3 x 12-15</td>
+  </tr>
+  <tr>
+    <td>Extensiones de tríceps en polea alta</td>
+    <td>3 x 10-12</td>
+  </tr>
+  <tr>
+    <td>Crunch abdominal</td>
+    <td>3 x 15-20</td>
+  </tr>
+  <tr>
+    <td>Elevaciones de piernas en banco romano</td>
+    <td>3 x 10-12</td>
+  </tr>
+  <tr>
+    <td>Flexiones de brazos</td>
+    <td>3 x 10-12</td>
+  </tr>
+</table>
+
+<table>
+  <!-- Día 2 -->
+  <tr>
+    <td rowspan="10">Día 2</td>
+    <td>Press militar (con mancuernas o barra)</td>
+    <td>4 x 8-10</td>
+  </tr>
+  <tr>
+    <td>Dominadas / dominadas con variantes</td>
+    <td>3 x 8-10</td>
+  </tr>
+  <tr>
+    <td>Remo con barra o máquina de remo</td>
+    <td>3 x 10-12</td>
+  </tr>
+  <tr>
+    <td>Elevaciones de talones de pie</td>
+    <td>3 x 12-15</td>
+  </tr>
+  <tr>
+    <td>Lunges o estocadas (con mancuernas o barra) por pierna</td>
+    <td>3 x 10-12</td>
+  </tr>
+  <tr>
+    <td>Encogimientos de hombros con mancuernas "Que me importa"</td>
+    <td>3 x 12-15</td>
+  </tr>
+  <tr>
+    <td>Curl de bíceps martillo</td>
+    <td>3 x 10-12</td>
+  </tr>
+  <tr>
+    <td>Femorales en maquina</td>
+    <td>3 x 10-12</td>
+  </tr>
+  <tr>
+    <td>Plancha lateral</td>
+    <td>3 x 30-45 segundos (cada lado)</td>
+  </tr>
+  <tr>
+    <td>Abdominales con rotación (torso twist)</td>
+    <td>3 x 15-20 (cada lado)</td>
+  </tr>
+</table>
+
+<table>
+  <!-- Día 3 -->
+  <tr>
+    <td rowspan="10">Día 3</td>
+    <td>Zancadas"Paso al Frente" (con mancuernas o barra) por pierna</td>
+    <td>4 x 8-10</td>
+  </tr>
+  <tr>
+    <td>Prensa de piernas</td>
+    <td>3 x 8-10</td>
+  </tr>
+  <tr>
+    <td>Sillon de cuadriceps</td>
+    <td>3 x 10-12</td>
+  </tr>
+  <tr>
+    <td>Fondos en banco</td>
+    <td>3 x 10-12</td>
+  </tr>
+  <tr>
+    <td>Press de hombros con mancuernas</td>
+    <td>3 x 8-10</td>
+  </tr>
+  <tr>
+    <td>Elevaciones frontales con mancuernas</td>
+    <td>3 x 12-15</td>
+  </tr>
+  <tr>
+    <td>Tríceps en polea alta con cuerda</td>
+    <td>3 x 10-12</td>
+  </tr>
+  <tr>
+    <td>Abdominales acordeón</td>
+    <td>3 x 15-20</td>
+  </tr>
+  <tr>
+    <td>Hip Thrust con barra</td>
+    <td>3 x 10-12</td>
+  </tr>
+  <tr>
+    <td>Elevaciones de rodillas banco romano</td>
+    <td>3 x 10-12</td>
+  </tr>
+</table>
+  </div>
+  
+  <p id="p"></p>
+  <script src="script.js"></script>
+  
+</body>
+</html>

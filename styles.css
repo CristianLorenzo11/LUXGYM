@@ -1,0 +1,137 @@
+/* Estilos base */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #000000; /* Fondo oscuro */
+  color: #ffffff; /* Texto blanco */
+}
+
+h1 {
+  margin-top: 50px;
+  color: #ff7f0f; /* Anaranjado */
+}
+
+.botones {
+  margin-top: 30px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #FF6600; /* Anaranjado más fuerte y brillante en formato hexadecimal */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Efecto de borde para el texto */
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+@media only screen and (max-width: 600px) {
+  button {
+      width: 90%; /* Establecer el ancho al 90% del ancho de la pantalla en dispositivos móviles */
+      max-width: 300px; /* Establecer un ancho máximo para evitar que los botones sean demasiado grandes */
+  }
+}
+
+button:hover {
+  background-color: #FFD700; /* Negro */
+}
+
+#logo {
+  max-width: 200px; /* Tamaño máximo del logo */
+  width: 100%; /* Para asegurar que el logo sea responsivo */
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px; /* Ajuste el margen inferior para mover el logo hacia abajo */
+  border-radius: 50%;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  #logo {
+      max-width: 150px; /* Reducir el tamaño máximo del logo en dispositivos móviles */
+      margin-top: 10px; /* Ajustar el margen superior del logo */
+      margin-bottom: 10px; /* Ajustar el margen inferior del logo */
+  }
+}
+
+button.seleccionado {
+  background-color: #000000; /* Negro */
+  border: 2px solid white; /* Agregar un borde blanco al botón seleccionado */
+}
+
+/* Estilos para el mensaje */
+.mensaje {
+  font-size: 16px; /* Tamaño de fuente adecuado para dispositivos móviles */
+  margin: 10px; /* Ajustar el margen para separar el mensaje de otros elementos */
+  color: white; /* Color de texto */
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para resaltar el mensaje */
+  padding: 10px; /* Espaciado interior */
+}
+
+/* Estilos para el contenedor de la tabla */
+.tabla-container {
+  overflow-x: auto; /* Hacer que el contenedor tenga desplazamiento horizontal en dispositivos pequeños */
+  margin: 0 auto; /* Centrar el contenedor horizontalmente */
+}
+
+/* Estilos para la tabla */
+table {
+  width: 50%; /* Ancho de la tabla del 100% del contenedor */
+  margin: 20px auto; /* Centrar la tabla horizontalmente y agregar espacio alrededor */
+  border-collapse: collapse; /* Colapsar los bordes de la tabla */
+  border: 2px solid #ffffff; /* Borde sólido blanco */
+}
+
+th, td {
+  padding: 10px; /* Espaciado interior para celdas */
+  border: 1px solid #ffffff; /* Borde sólido blanco para celdas */
+}
+
+th {
+  background-color: #FF6600; /* Fondo anaranjado para las celdas de encabezado */
+  color: white; /* Texto blanco para las celdas de encabezado */
+}
+
+tr:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente para resaltar filas impares */
+}
+
+table {
+  color: white; /* Texto blanco en la tabla */
+}
+
+td {
+  text-align: center; /* Centrar el texto en las celdas */
+}
+
+/* Estilos para divs responsivos */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  width: 45%;
+  margin: 10px;
+  padding: 20px;
+  background-color: #333333;
+  border-radius: 5px;
+}
+
+/* Estilos para la tabla en dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  table {
+      font-size: 14px; /* Reducir el tamaño de fuente en dispositivos móviles */
+  }
+
+  th, td {
+      padding: 5px; /* Reducir el espaciado interior de las celdas en dispositivos móviles */
+  }
+}
