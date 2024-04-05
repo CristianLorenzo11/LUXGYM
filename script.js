@@ -44,35 +44,35 @@ botones.forEach(boton => {
 
 // Función para mostrar la tabla de rutina de adaptación
 function mostrarRutinaAdaptacion() {
-  ocultarTodasLasTablas();
   const tablaAdaptacion = document.getElementById("rutinaAdaptacionTabla");
   tablaAdaptacion.style.display = "block";
+  tablaAdaptacion.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 // Función para mostrar la tabla de rutina Full Body
 function mostrarRutinaFB() {
-  ocultarTodasLasTablas();
   const tablaFB = document.getElementById("rutinaFBTabla");
   tablaFB.style.display = "block";
+  tablaFB.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 // Función para mostrar la tabla de rutina Weider
 function mostrarRutinaWeider() {
-  ocultarTodasLasTablas();
   const tablaW = document.getElementById("rutinaWTabla");
   tablaW.style.display = "block";
+  tablaW.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 // Función para mostrar la tabla de rutina Weider
 function mostrarRutinaEM() {
-  ocultarTodasLasTablas();
   const tablaW = document.getElementById("rutinaEMTabla");
   tablaW.style.display = "block";
+  tablaW.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 // Función para mostrar la tabla de rutina Weider
 function mostrarRutinaM() {
-  ocultarTodasLasTablas();
   const tablaW = document.getElementById("rutinaMTabla");
   tablaW.style.display = "block";
+  tablaW.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
