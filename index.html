@@ -8,13 +8,52 @@
 </head>
 <body>
   <img id="logo" src="lux.png" alt="Logo">
-  <div class="botones">
+  <!-- Navbar -->
+<div class="navbar">
+  <a id="inicios" onclick="inicio()">Inicio</a>
+  <a id="contacto" onclick="contactos()">Contacto</a>
+  <a id="rutina" onclick="rutinas()">Rutinas</a>
+</div>
+  <div class="botones"  style="display: none;">
     <button id="rutinaAdaptacion" onclick="mostrarRutinaAdaptacion()">Rutina de Adaptación</button>
     <button id="rutinaFullBody" onclick="mostrarRutinaFB()">Rutina Full Body</button>
     <button id="rutinaWeider" onclick=" mostrarRutinaWeider()">Rutina Weider</button>
     <button id="rutinaEmpujes" onclick="mostrarRutinaEM()">Rutina de Empujes-Tirones-Piernas</button>
     <button id="rutinaMujeres" onclick="mostrarRutinaM()">Rutina de Mujeres 5 dias</button>
   </div>
+<!-- Sección de inicio -->
+<!-- Sección de inicio -->
+<div class="inicio-container" id="inicio">
+  <div class="inicio" >
+    <h2>Bienvenido</h2>
+    <p>Somos un gimnasio comprometido con tu salud y bienestar.</p>
+    <h3>Por qué elegirnos:</h3>
+    <ul>
+      <li>Equipamiento moderno y de alta calidad</li>
+      <li>Instructores calificados y amigables</li>
+      <li>Clases grupales para todos los niveles</li>
+      <li>Entrenamiento personalizado</li>
+      <li>Ambiente motivador y acogedor</li>
+    </ul>
+  </div>
+</div>
+
+
+
+<!-- Div de contactos -->
+<div class="contactos" id="contactos" style="display: none;">
+  <h2> </h2>
+  <div class="contact">
+  <div class="contacto-item"> <a href="https://wa.me/+5493755722737" target="_blank">
+    <img src="whats.png" alt="WhatsApp" class="contact-icon">
+</a></div>
+  <div class="contacto-item"> <a  href="https://www.instagram.com/luxgym11/" target="_blank">
+    <img src="insta.png" alt="Instagram" class="contact-icon">
+  </div>
+  
+  <!-- Puedes agregar más información de contacto aquí -->
+</div>
+
   <div class="tabla-rutina" id="rutinaMTabla" style="display: none;">
     <h2>Rutina de Mujeres 5 días a la semana</h2>
      <table>
@@ -946,6 +985,8 @@
     <td>3 x 10-12</td>
   </tr>
 
+
+
   <!-- Día 2 -->
   <tr>
     <td rowspan="10">Día 2</td>
@@ -989,7 +1030,8 @@
     <td>3 x 15-20 (cada lado)</td>
   </tr>
 
-  
+
+
   <!-- Día 3 -->
   <tr>
     <td rowspan="10">Día 3</td>
@@ -1034,7 +1076,9 @@
   </tr>
 </table>
   </div>
+  
   <p id="p"></p>
   <script src="script.js"></script>
+  
 </body>
 </html>

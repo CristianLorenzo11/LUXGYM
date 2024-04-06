@@ -37,6 +37,15 @@ botones.forEach(boton => {
         case "rutinaMujeres":
           mostrarRutinaM();
           break;
+        case "rutina":
+          rutinas();
+          break;
+        case "contacto":
+          contactos();
+            break;
+            case "inicio":
+              inicio();
+                break;
       // Agrega casos para otros botones si es necesario
     }
   });
@@ -75,4 +84,30 @@ function mostrarRutinaM() {
   const tablaW = document.getElementById("rutinaMTabla");
   tablaW.style.display = "block";
   tablaW.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+function inicio() {
+  var contactos = document.getElementById('contactos');
+  contactos.style.display = 'none';
+  var botones = document.querySelector('.botones');
+  botones.style.display = 'none';
+  var inicio = document.getElementById('inicio');
+  inicio.style.display = 'block';
+}
+
+function rutinas() {
+  var inicio = document.getElementById("inicio");
+  inicio.style.display = "none";
+  var contactos = document.getElementById('contactos');
+  contactos.style.display = 'none';
+  var botones = document.querySelector('.botones');
+  botones.style.display = 'block'; // Cambia el estilo para hacer visible los botones
+}
+
+function contactos() {
+  var inicio = document.getElementById("inicio");
+  inicio.style.display = "none";
+  var botones = document.querySelector('.botones');
+  botones.style.display = 'none';
+  var contactos = document.getElementById('contactos');
+  contactos.style.display = 'block'; // Cambia el estilo para hacer visible el div de contactos
 }
