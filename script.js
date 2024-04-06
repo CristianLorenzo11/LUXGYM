@@ -77,3 +77,20 @@ function mostrarRutinaM() {
   tablaW.style.display = "block";
   tablaW.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
+
+
+
+function inicio() {
+  var contactos = document.getElementById('contactos');
+  contactos.style.display = 'none';
+
+  var inicio = document.getElementById('inicio');
+  inicio.style.display = 'block';
+}
+
+function contactos() {
+  var inicio = document.getElementById("inicio");
+  inicio.style.display = "none";
+  var contactos = document.getElementById('contactos');
+  contactos.style.display = 'block'; // Cambia el estilo para hacer visible el div de contactos
+}
