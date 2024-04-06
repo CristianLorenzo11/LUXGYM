@@ -157,7 +157,7 @@ td {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #333;
+
   padding: 10px 0;
 }
 
@@ -168,7 +168,9 @@ td {
   margin: 0 20px;
   padding: 10px 15px;
   border-radius: 5px;
+  border: 2px solid aliceblue;
   transition: background-color 0.3s ease;
+  
 }
 
 /* Estilos para los enlaces del navbar al pasar el cursor */
@@ -185,17 +187,47 @@ td {
 
   .navbar a {
     margin-bottom: 10px;
+    font-size: 16px;
+    cursor: pointer; /* Cambiar el cursor a pointer para todos los enlaces */
+    width: 80%; /* Establecer el ancho al 100% para que ocupen todo el espacio disponible */
+    display: block; /* Para que ocupen toda la anchura disponible */
+    text-align: center; /* Centrar el texto dentro del enlace */
   }
 }
 
+#inicios,
+#contacto {
+    cursor: pointer;
+}
+
+
 /* Estilos para la sección de inicio */
 .inicio-container {
-  background-color: #222;
+  background-color: #333;
   color: white;
   padding: 20px;
   text-align: center;
   margin-top: 20px;
-  border-radius: 10px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Borde con color blanco */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5); /* Sombra blanca */
+}
+/* Estilos para la sección de inicio */
+.contactos{
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Borde con color blanco */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5); /* Sombra blanca */
 }
 
 .inicio h2 {
@@ -215,7 +247,7 @@ td {
   margin-top: 10px;
   display: flex;
   justify-content: center;
-  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5)); /* Aplica una sombra suave blanca a las imágenes */
+  /* filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));  Aplica una sombra suave blanca a las imágenes */
 
 }
 
