@@ -66,6 +66,7 @@ h1 {
   }
 
   .feed {
-    gap: 40px; /* Ajusta el espacio entre imágenes en dispositivos con un ancho máximo de 768px */
+    gap: 60px; /* Ajusta el espacio entre imágenes en dispositivos con un ancho máximo de 768px */
   }
 }
+
