@@ -50,4 +50,22 @@ h1 {
   text-align: center; /* Centra el texto horizontalmente */
   margin-top: 50px; /* Margen superior */
 }
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .imagen {
+    width: 300px; /* Reducir el ancho en dispositivos móviles */
+    height: 300px; /* Reducir la altura en dispositivos móviles */
+  }
 
+  .imagen img {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen en dispositivos móviles */
+  }
+
+  h1 {
+    font-size: 20px; /* Reducir el tamaño del encabezado en dispositivos móviles */
+  }
+
+  .feed {
+    gap: 40px; /* Ajusta el espacio entre imágenes en dispositivos con un ancho máximo de 768px */
+  }
+}
