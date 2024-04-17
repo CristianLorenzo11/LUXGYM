@@ -258,3 +258,27 @@ td {
   height: 100px; /* Ajusta el tamaño según tus necesidades */
   margin: 0 10px; /* Ajusta el margen entre las imágenes según tus necesidades */
 }
+
+
+
+@keyframes parpadeo {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+#rutinaEMTabla .contacto-item a {
+  color: black;
+  background-color: #FF6600;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid black; /* Borde negro */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  animation: parpadeo 1.5s infinite; /* Aplicar la animación */
+}
+
+#rutinaEMTabla .contacto-item a:hover {
+  background-color: #FF6600;
+  animation: none; /* Detener la animación al pasar el cursor */
+}
