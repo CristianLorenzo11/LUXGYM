@@ -55,7 +55,6 @@ h1 {
   .imagen {
     width: 250px; /* Reducir el ancho en dispositivos móviles */
     height: 300px; /* Reducir la altura en dispositivos móviles */
-    margin-bottom: 20px; /* Agrega un margen inferior para separar las imágenes verticalmente */
   }
 
   .imagen img {
@@ -66,6 +65,9 @@ h1 {
     font-size: 20px; /* Reducir el tamaño del encabezado en dispositivos móviles */
   }
 
-  
+  .feed {
+    gap: 40px; /* Ajusta el espacio entre imágenes en dispositivos con un ancho máximo de 768px */
+    margin-bottom: 20px; /* Agrega un margen inferior para separar las imágenes verticalmente */
+  }
 }
 
