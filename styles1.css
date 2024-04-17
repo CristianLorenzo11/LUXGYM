@@ -53,12 +53,12 @@ h1 {
 /* Media query para dispositivos móviles */
 @media screen and (max-width: 768px) {
   .imagen {
-    width: 300px; /* Reducir el ancho en dispositivos móviles */
+    width: 250px; /* Reducir el ancho en dispositivos móviles */
     height: 300px; /* Reducir la altura en dispositivos móviles */
   }
 
   .imagen img {
-    max-width: 100%; /* Ajusta el ancho máximo de la imagen en dispositivos móviles */
+    max-width: 80%; /* Ajusta el ancho máximo de la imagen en dispositivos móviles */
   }
 
   h1 {
