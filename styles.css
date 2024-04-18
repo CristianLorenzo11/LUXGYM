@@ -196,12 +196,45 @@ td {
     text-align: center; /* Centrar el texto dentro del enlace */
   }
 }
+/* Estilo para el enlace seleccionado */
+.navbar a.seleccionado {
+  background-color: #FF6600;
+  color: white;
+}
+
 
 #inicios,
-#contacto {
+#contacto ,
+#recomendacion{
     cursor: pointer;
 }
 
+.recomendaciones {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+.recomendaciones h3 {
+  color: #FF6600;
+}
+
+.recomendaciones ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recomendaciones li {
+  margin-bottom: 10px;
+}
 
 /* Estilos para la sección de inicio */
 .inicio-container {

@@ -81,16 +81,60 @@ function mostrarRutinaM() {
 
 
 function inicio() {
+
+    // Ocultar otros enlaces seleccionados
+    ocultarEnlacesSeleccionados();
+  
+    var inicio = document.getElementById('inicios');
+    inicio.classList.add('seleccionado');
+
   var contactos = document.getElementById('contactos');
   contactos.style.display = 'none';
+  
+  var recomendaciones = document.getElementById('recomendaciones');
+  recomendaciones.style.display = 'none';
 
   var inicio = document.getElementById('inicio');
   inicio.style.display = 'block';
 }
 
 function contactos() {
+   // Ocultar otros enlaces seleccionados
+   ocultarEnlacesSeleccionados();
+  
+   var contacto = document.getElementById('contacto');
+   contacto.classList.add('seleccionado');
   var inicio = document.getElementById("inicio");
   inicio.style.display = "none";
+  
+  var recomendaciones = document.getElementById('recomendaciones');
+  recomendaciones.style.display = 'none';
   var contactos = document.getElementById('contactos');
   contactos.style.display = 'block'; // Cambia el estilo para hacer visible el div de contactos
 }
+
+function mostrarRecomendaciones() {
+    // Ocultar otros enlaces seleccionados
+  ocultarEnlacesSeleccionados();
+  
+  var recomendacion = document.getElementById('recomendacion');
+  recomendacion.classList.add('seleccionado');
+
+  var inicio = document.getElementById("inicio");
+  inicio.style.display = "none";
+  var contactos = document.getElementById('contactos');
+  contactos.style.display = 'none';
+  
+  var recomendaciones = document.getElementById('recomendaciones');
+  if (recomendaciones.style.display === 'none') {
+    recomendaciones.style.display = 'block';
+  }
+  
+  }
+  function ocultarEnlacesSeleccionados() {
+    var enlaces = document.querySelectorAll('.navbar a');
+    enlaces.forEach(function(enlace) {
+      enlace.classList.remove('seleccionado');
+    });
+  }
+
